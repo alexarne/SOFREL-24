@@ -5,7 +5,7 @@
 std::vector<int> sort(const std::vector<int>& A) {
     std::vector<int> sorted(A);
     for (int i = 1; i < sorted.size(); ++i) {
-        for (int j = i-1; j > 0; --j) {
+        for (int j = i-1; j >= 0; --j) {
             if (sorted[j] > sorted[j+1]) {
                 int temp = sorted[j];
                 sorted[j] = sorted[j+1];
